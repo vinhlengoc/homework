@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		094315002479103500A0A1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094314FF2479103500A0A1D1 /* AppDelegate.swift */; };
-		094315022479103500A0A1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094315012479103500A0A1D1 /* SceneDelegate.swift */; };
 		094315042479103500A0A1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094315032479103500A0A1D1 /* ViewController.swift */; };
 		094315072479103500A0A1D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094315052479103500A0A1D1 /* Main.storyboard */; };
 		094315092479103D00A0A1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094315082479103D00A0A1D1 /* Assets.xcassets */; };
 		0943150C2479103D00A0A1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0943150A2479103D00A0A1D1 /* LaunchScreen.storyboard */; };
+		094315152479113200A0A1D1 /* SigmaTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094315142479113200A0A1D1 /* SigmaTask.swift */; };
+		094315172479114800A0A1D1 /* SigmaTaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094315162479114800A0A1D1 /* SigmaTaskTimer.swift */; };
+		094315192479115E00A0A1D1 /* SubmitDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094315182479115E00A0A1D1 /* SubmitDataTask.swift */; };
+		0943151C2479118700A0A1D1 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943151B2479118700A0A1D1 /* Notifications.swift */; };
+		0943151F2479126600A0A1D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943151E2479126600A0A1D1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		094314FC2479103500A0A1D1 /* SigmaHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigmaHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		094314FF2479103500A0A1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		094315012479103500A0A1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		094315032479103500A0A1D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		094315062479103500A0A1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		094315082479103D00A0A1D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0943150B2479103D00A0A1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0943150D2479103D00A0A1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094315142479113200A0A1D1 /* SigmaTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigmaTask.swift; sourceTree = "<group>"; };
+		094315162479114800A0A1D1 /* SigmaTaskTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigmaTaskTimer.swift; sourceTree = "<group>"; };
+		094315182479115E00A0A1D1 /* SubmitDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitDataTask.swift; sourceTree = "<group>"; };
+		0943151B2479118700A0A1D1 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		0943151E2479126600A0A1D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		094314FE2479103500A0A1D1 /* SigmaHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				0943151D2479124F00A0A1D1 /* Constants */,
+				0943151A2479117700A0A1D1 /* Extensions */,
+				094315132479112200A0A1D1 /* Tasks */,
 				094314FF2479103500A0A1D1 /* AppDelegate.swift */,
-				094315012479103500A0A1D1 /* SceneDelegate.swift */,
 				094315032479103500A0A1D1 /* ViewController.swift */,
 				094315052479103500A0A1D1 /* Main.storyboard */,
 				094315082479103D00A0A1D1 /* Assets.xcassets */,
@@ -65,6 +75,32 @@
 				0943150D2479103D00A0A1D1 /* Info.plist */,
 			);
 			path = SigmaHomeWork;
+			sourceTree = "<group>";
+		};
+		094315132479112200A0A1D1 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				094315142479113200A0A1D1 /* SigmaTask.swift */,
+				094315162479114800A0A1D1 /* SigmaTaskTimer.swift */,
+				094315182479115E00A0A1D1 /* SubmitDataTask.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		0943151A2479117700A0A1D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0943151B2479118700A0A1D1 /* Notifications.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0943151D2479124F00A0A1D1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0943151E2479126600A0A1D1 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943151C2479118700A0A1D1 /* Notifications.swift in Sources */,
+				094315192479115E00A0A1D1 /* SubmitDataTask.swift in Sources */,
+				094315172479114800A0A1D1 /* SigmaTaskTimer.swift in Sources */,
 				094315042479103500A0A1D1 /* ViewController.swift in Sources */,
+				0943151F2479126600A0A1D1 /* Constants.swift in Sources */,
 				094315002479103500A0A1D1 /* AppDelegate.swift in Sources */,
-				094315022479103500A0A1D1 /* SceneDelegate.swift in Sources */,
+				094315152479113200A0A1D1 /* SigmaTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

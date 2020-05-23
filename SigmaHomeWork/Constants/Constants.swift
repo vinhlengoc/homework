@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Constants {
+    
+    static let GET_LOCATION_TIME_INTERVAL: Double = 60 * 6 // 6 mins
+    
+    static let GET_BATTERY_TIME_INTERVAL: Double = 60 * 9 // 9 mins
+    
+    static let SUBMIT_DATA_API_URL = "http://sigma-solutions.eu/test"
+}
