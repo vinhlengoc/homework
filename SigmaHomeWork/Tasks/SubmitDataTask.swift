@@ -48,6 +48,7 @@ class SubmitDataTask {
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             // should handle data here
+            print("push data successfull")
         }
 
         task.resume()
