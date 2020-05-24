@@ -109,8 +109,8 @@ class SigmaTask: NSObject {
         }
         
         //because L list can be accessed from different threads, we use a concurrent queue with barrier to update L. Alternately, we can use a serial queue without barrier to update it as well (i.e: dispatchqueue.main).
-        queue.async (flags: .barrier){
-            self.data.append("\(loc)")
+        queue.async (flags: .barrier){ [weak self] in
+            self?.data.append("\(loc)")
         }
         
     }
@@ -118,7 +118,10 @@ class SigmaTask: NSObject {
     private func getPhoneBatteryAndSave() {
 //        print("getting phone battery")
         //because L list can be accessed from different threads, we use a concurrent queue with barrier to update L. Alternately, we can use a serial queue without barrier to update it as well (i.e: dispatchqueue.main).
-        queue.async (flags: .barrier){
+        queue.async (flags: .barrier){[weak self] in
+            guard let `self` = self else {
+                return
+            }
             self.data.append("\(self.batteryLevel)")
         }
     }
